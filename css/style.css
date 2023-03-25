@@ -102,7 +102,7 @@ main {
     font-size: clamp(16px, 2rem + (1vw - 3.2px) * 1, 24px);
     font-family: var(--robotos);
     font-weight: 100;
-    margin: 30% 0px;
+    margin: 25% 0 10% 0;
 }
 
 .iaside {
@@ -219,7 +219,7 @@ p.acheter:hover {
     }
 
     .card {
-        margin: 0px 25px 120px;
+        margin: 0px 40px 120px;
         max-width: 900px;
         transition: transform 330ms ease-in-out 0s;
     }
@@ -234,8 +234,9 @@ p.acheter:hover {
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 1024px) {
+@media screen and (min-width: 425px) and (max-width: 1023px) {
     .ititle {
+        margin: 15% 0 5% 0;
     }
 
     .iaside {
