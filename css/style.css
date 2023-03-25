@@ -175,6 +175,54 @@ p.acheter:hover {
     transition: transform 330ms ease-in-out 0s;
 }
 /**********************************************************/
+.bg-details{
+    background: var(--roseRouge);
+}
+.main-container.details {
+    height: auto;
+    background: var(--roseRouge);
+    color: var(--couleurFont);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    /* background: red; */
+}
+.left-side{
+    /* display: none; */
+    text-align: center;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+.details-container{  /*  RIGHT SIDE */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 65%;
+    padding: 60px;
+    font-size: 24px;
+    font-family: var(--roboto);
+    font-weight: 300;
+    /* background: #444; */
+}
+.detail-item{
+    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.3); */
+    /* background: #444; */
+    max-width: 250px;
+    margin: 30px auto;
+}
+.detail-item img{
+    margin: 15px 0;
+}
+.detail-item .detail-text{
+
+}
+/**********************************************************/
 @media screen and (min-width: 1024px) {
     .title {
     }
@@ -244,5 +292,33 @@ p.acheter:hover {
     }
     .card-container {
         max-width: 350px;
+    }
+}
+@media screen and (min-width: 728px) {
+    .main-container.details {
+        max-width: 1400px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        /* background: rgba(220, 20, 60, 0.479); */
+    }
+    
+    .left-side{
+        height: auto;
+        width: 65%;
+        max-width: 900px;
+        margin: 50px;
+        /* background-color: red; */
+        background-image: url(/medias/img/details-picture.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* padding: 50px; */
+    }
+    .details-container{  /*  RIGHT SIDE */
+        width: 35%;
+        height: 100%;
+        padding: 0px 25px 0 0;
+        /* background: #344; */
     }
 }
