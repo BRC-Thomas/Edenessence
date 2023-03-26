@@ -3,14 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: coolvetica;
     src: url("/fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("/fonts/coolvetica_rg-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
-
 :root {
     --DM: "DM Sans", sans-serif;
     --DMss: "DM Serif Text", serif;
@@ -23,20 +21,17 @@
     --bgProduit: #fff7f7;
     --bgCommentaire: #a24e4e;
     --couleurFont: #f5f5f5;
+    --roseclair:#e4d6d6;
 }
-
 body {
     background-color: darkslategrey;
 }
-
 body::-webkit-scrollbar {
     display: none;
 }
-
 main {
     background: var(--rose);
 }
-
 .hero {
     position: relative;
     display: grid;
@@ -45,19 +40,16 @@ main {
     justify-items: stretch;
     height: 100vh;
 }
-
 .hero-top {
     position: absolute;
     top: 50px;
 }
-
 .hero-img {
     height: 100vh;
     max-width: 100%;
     object-fit: cover;
     object-position: center center;
 }
-
 .title {
     width: 100vw;
     text-align: center;
@@ -65,31 +57,27 @@ main {
     font-family: var(--DM);
     font-size: clamp(16px, 1rem + (1vw - 3.2px) * 0.5, 24px);
 }
-
 .txt {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
+    width: 80%;
     text-align: center;
     font-size: clamp(24px, 2rem + (1vw - 3.2px) * 1, 48px);
     font-family: var(--roboto), sans-serif;
     font-weight: 300;
     color: var(--couleurFont);
 }
-
 .main-container {
     height: 100vh;
     background: var(--rose);
     color: var(--roseRouge);
 }
-
 .philo {
     max-width: 1400px;
     margin: 0px auto;
 }
-
 .intro-txt {
     height: 100%;
     display: flex;
@@ -97,14 +85,12 @@ main {
     text-align: center;
     padding: 15px;
 }
-
 .ititle {
     font-size: clamp(16px, 2rem + (1vw - 3.2px) * 1, 24px);
     font-family: var(--robotos);
     font-weight: 100;
     margin: 25% 0 10% 0;
 }
-
 .iaside {
     max-width: 600px;
     min-width: 200px;
@@ -114,7 +100,6 @@ main {
     font-size: clamp(16px, 1rem + (1vw - 3.2px) * 1, 24px);
     line-height: 1.3em;
 }
-
 .main-container.produit {
     background: var(--couleurFont);
     height: auto;
@@ -125,43 +110,36 @@ main {
     align-items: center;
     text-align: center;
 }
-
 .produit h2 {
     width: 100%;
     margin: 50px 0px;
     font-family: var(--robotos);
     font-size: clamp(32px, 2rem + (1vw - 3.2px) * 1, 48px);
 }
-
 .card-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 250px;
 }
-
 .card {
     margin: 10px 0px 50px;
     box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 15px;
     border-radius: 20px 20px 0px 0px;
 }
-
 .card .fonction, .card .acheter {
     margin: 15px 0px;
 }
-
 .card img {
     width: 100%;
     object-fit: cover;
     margin-bottom: 15px;
     border-radius: 20px 20px 0px 0px;
 }
-
 p.fonction {
     font-family: var(--robotos);
     font-size: clamp(24px, 2rem + (1vw - 3.2px) * 1, 32px);
 }
-
 p.acheter {
     text-transform: uppercase;
     font-family: var(--roboto);
@@ -185,10 +163,8 @@ p.acheter:hover {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    /* background: red; */
 }
 .left-side{
-    /* display: none; */
     text-align: center;
     height: 10%;
     display: flex;
@@ -196,7 +172,6 @@ p.acheter:hover {
     justify-content: center;
     font-size: 32px;
     margin-top: 50px;
-    /* background-color: red; */
 }
 .details-container{  /*  RIGHT SIDE */
     text-align: center;
@@ -208,99 +183,72 @@ p.acheter:hover {
     font-size: 24px;
     font-family: var(--roboto);
     font-weight: 300;
-    /* background: #444; */
 }
 .detail-item{
-    /* box-shadow: 5px 5px 15px rgba(0,0,0,0.3); */
-    /* background: #444; */
     max-width: 250px;
     margin: 30px auto;
 }
 .detail-item img{
     margin: 15px 0;
 }
-.detail-item .detail-text{
+/**********************************************************/
+.main-container.client{
+    height: fit-content;
+    padding: 15px;
+    background: var(--roseclair);
+    font-family: var(--roboto);
+    text-align: center;
+}
+.client-container{
+    max-width: 500px; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 10px; 
+    justify-content: center;
+    text-align: center;
 
+} 
+.client h2{
+    font-family: var(--robotos);
+    font-weight: 500;
+    padding: 15px 0;
+    text-align: center;
+}
+.client-card{
+    border: 1px solid var(--roseRouge);
+    background: var(--couleurFont);
+    min-height: 240px;
+    margin: 10px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.client-txt{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-name{
+    height: 20%;
+    margin-top: 15px;
+    font-weight: 500;
 }
 /**********************************************************/
-@media screen and (min-width: 1024px) {
-    .title {
+@media (min-width: 728px) {
+    .philo {
+        height: 80vh
     }
-
-    .txt {
-    }
-
-    .intro-txt {
-        flex-direction: row;
-        align-items: center;
-        padding: 80px;
-    }
-
-    .ititle {
-        width: 50%;
-        /* font-size: clamp(24px, 2rem + (1vw - 3.2px) * 1, 48px); */
-        margin: 0;
-
-    }
-
     .iaside {
-        width: 50%;
-        padding: 50px;
-        margin: 0;
-        /* font-size: clamp(24px, 2rem + (1vw - 3.2px) * 1, 28px); */
+        font-size: clamp(16px, 2rem + (1vw - 3.2px) * 1, 24px);
     }
-
-    .produit h2 {
-    }
-
-    .main-container.produit {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1500px;
-    }
-
-    .card {
-        margin: 0px 40px 120px;
-        max-width: 900px;
-        transition: transform 330ms ease-in-out 0s;
-    }
-
-    .card img {
-        margin-bottom: 15px;
-    }
-
-    .card:hover {
-        transition: all 0.3s ease-in-out 0s;
-        transform: scale(1.2);
-    }
-}
-
-@media screen and (min-width: 425px) and (max-width: 1023px) {
-    .ititle {
-        margin: 15% 0 5% 0;
-    }
-
-    .iaside {
-        line-height: 1.3em;
-    }
-    .card-container {
-        max-width: 350px;
-    }
-}
-@media screen and (min-width: 728px) {
     .main-container.details {
         max-width: 1400px;
         margin: 0 auto;
         flex-direction: row;
         justify-content: center;
-        /* background: rgba(220, 20, 60, 0.479); */
     }
     
     .left-side{
@@ -308,17 +256,84 @@ p.acheter:hover {
         width: 65%;
         max-width: 900px;
         margin: 50px;
-        /* background-color: red; */
         background-image: url(/medias/img/details-picture.jpg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        /* padding: 50px; */
     }
     .details-container{  /*  RIGHT SIDE */
         width: 35%;
         height: 100%;
         padding: 0px 25px 0 0;
-        /* background: #344; */
     }
+    .client-container{
+        max-width: 900px; 
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, 450px);
+    }
+    .client-card{
+        width:450px ;
+    }
+
+}
+@media (min-width: 1024px) {
+    .intro-txt {
+        flex-direction: row;
+        align-items: center;
+        padding: 80px;
+    }
+    .ititle {
+        width: 50%;
+        margin: 0;
+    }
+    .iaside {
+        width: 50%;
+        padding: 50px;
+        margin: 0;
+        font-size: clamp(16px, 2rem + (1vw - 3.2px) * 1, 24px);
+    }
+    .main-container.produit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1500px;
+    }
+    .card {
+        margin: 0px 40px 120px;
+        max-width: 900px;
+        transition: transform 330ms ease-in-out 0s;
+    }
+    .card img {
+        margin-bottom: 15px;
+    }
+    .card:hover {
+        transition: all 0.3s ease-in-out 0s;
+        transform: scale(1.2);
+    }
+    .main-container.client{
+        height: 50vh;
+    }
+    .client-container{
+        max-width: 1000px; 
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+    .client-card{
+        width:300px ;
+    }
+}
+@media (min-width: 425px) and (max-width: 1023px) {
+    .ititle {
+        margin: 15% 0 5% 0;
+    }
+
+    .iaside {
+        line-height: 1.3em;
+    }
+
 }
