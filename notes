@@ -1,12 +1,20 @@
-Fonts à revoir pour les titres
-Ajout d'animations
-Optimisation img
-Accessibilité
-Ajout crédit pour img et icon
-Réduire size font de acheter
-Changer logo couleur (4/6)
-augmenter fontsize 2/6 en 1024+
+/*** A FAIRE ***/
 
+/* FONTS */
+augmenter fontsize 2/6 en 1024+
+Fonts à revoir pour les titres
+font-responsive des avis clients (5/6)
+Réduire size font de acheter (3/6)
+
+
+/* IMG */
+Optimisation img
+Ajout crédit pour img et icon
+Changer logo couleur (4/6)
+
+/* AUTRE */
+Ajout d'animations
+Accessibilité
 
 Commit : 
-Partie 4/6 
+Partie 5/6  avis client + responsive
