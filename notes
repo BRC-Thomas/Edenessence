@@ -1,15 +1,12 @@
 /*** A FAIRE ***/
 
 /* FONTS */
-augmenter fontsize 2/6 en 1024+
 Fonts à revoir pour les titres
-font-responsive des avis clients (5/6)
-Réduire size font de acheter (3/6)
-Font-responsive 6/6 a faire
+
 
 /* IMG */
 Optimisation img
-Ajout crédit pour img et icon
+
 
 
 /* AUTRE */
@@ -17,4 +14,4 @@ Ajout d'animations
 Accessibilité
 
 Commit : 
-Partie 6/6  + responsive, modif note + nouvelles img
+Font-responsive 6/6 5/6 2/6 + correction img + credit img et icon
