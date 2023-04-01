@@ -91,6 +91,7 @@ main {
     font-family: var(--robotos);
     font-weight: 100;
     margin: 25% 0 10% 0;
+    
 }
 .iaside {
     max-width: 600px;
@@ -100,6 +101,7 @@ main {
     font-family: var(--roboto);
     font-size: clamp(16px, 1rem + (1vw - 3.2px) * 1, 24px);
     line-height: 1.3em;
+    
 }
 .main-container.produit {
     background: var(--couleurFont);
@@ -210,13 +212,13 @@ p.acheter:hover {
     grid-gap: 10px; 
     justify-content: center;
     text-align: center;
-
 } 
 .client h2{
     font-family: var(--robotos);
     font-weight: 500;
     padding: 15px 0;
     text-align: center;
+    font-size : clamp(32px, 2rem + (1vw - 3.2px) * 1, 48px);
 }
 .client-card{
     border: 1px solid var(--roseRouge);
@@ -227,6 +229,7 @@ p.acheter:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: clamp(16px, calc(1rem + ((1vw - 3.2px) * 0.5)), 20px);
 }
 .client-txt{
     height: 80%;
@@ -286,6 +289,10 @@ p.acheter:hover {
     color: var(--couleurFont);
     text-decoration: none;
 }
+.logo-ressource a img{
+    width: 50px;
+    filter: grayscale(100);
+}
 
 
 
@@ -336,6 +343,7 @@ p.acheter:hover {
     .main-container.contact{
         display: flex;
         padding: 0;
+
         
     }
     .footer-left{
@@ -348,20 +356,20 @@ p.acheter:hover {
     .footer-left h3{
         width: 400px;
         padding: 50px 0 0 0;
-        font-size: 64px;
+        font-size: 48px;
     }
     .footer-right{
         height: 100%;
         width: 50%;
         display: flex;
-        font-size:32px;
+        font-size:24px;
     }
     .footer-right ul li:nth-child(even){
         margin-bottom: 60px;
     }
     .footer-right img{
         margin: 0 20px;
-        width: 60px;
+        width: 50px;
     }
 
 }
@@ -390,7 +398,7 @@ p.acheter:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 1500px;
+        max-width: 1400px;
     }
     .card {
         margin: 0px 40px 120px;
@@ -409,12 +417,16 @@ p.acheter:hover {
         align-items: center;
     }
     .client-container{
-        max-width: 1000px; 
-        grid-gap: 25px;
+        max-width: 1400px; 
+        grid-gap: 30px;
         grid-template-columns: repeat(auto-fit, 300px);
     }
     .client-card{
         width:300px ;
+    }
+    .main-container.contact{
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }
 @media (min-width: 425px) and (max-width: 1023px) {
@@ -425,5 +437,4 @@ p.acheter:hover {
     .iaside {
         line-height: 1.3em;
     }
-
 }
