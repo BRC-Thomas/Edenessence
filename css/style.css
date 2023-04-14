@@ -3,12 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: coolvetica;
-    src: url("/fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("/fonts/coolvetica_rg-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+
 :root {
     --DM: "DM Sans", sans-serif;
     --DMss: "DM Serif Text", serif;
@@ -244,7 +239,7 @@ p.acheter:hover {
 }
 /**********************************************************/
 .main-container.contact{
-    height: 100vh;
+    /* height: 100vh; */
     background:var(--roseRouge);
     color: var(--couleurFont);
     font-family: var(--robotos);
@@ -291,8 +286,8 @@ p.acheter:hover {
 }
 .logo-ressource a img{
     width: 50px;
-    filter: grayscale(100);
 }
+
 
 
 
@@ -335,9 +330,6 @@ p.acheter:hover {
     .client-card{
         width:450px ;
     }
-
-
-
 
 
     .main-container.contact{
